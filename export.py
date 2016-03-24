@@ -6,6 +6,7 @@ import optparse
 import urllib2
 import json
 import codecs
+from datetime import datetime
 #reload(sys)
 #sys.setdefaultencoding('utf-8')
 
@@ -15,7 +16,7 @@ def main(args):
     '''
     response = urllib2.urlopen('https://wapi.gogoro.com/tw/api/vm/list')
     data = json.load(response)
-    with codecs.open("gostation.csv", "w", "utf-8") as fo:
+    with codecs.open("gostation-%s.csv" % datetime.now().strftime("%Y%m%d"), "w", "utf-8") as fo:
         fo.write(u"站名,地址,營業時間,目前狀態,緯度,經度\r\n")
         for d in data["data"]:
             locname = json.loads(d["LocName"])
