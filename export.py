@@ -21,7 +21,12 @@ def main(args):
         for d in data["data"]:
             locname = json.loads(d["LocName"])
             address = json.loads(d["Address"])
-            state = u"已啟用" if d["State"] == 1 else u"建置中"
+            if d["State"] == 1:
+                state = u"已啟用"
+            elif d["State"] == 99:
+                state = u"建置中"
+            else:
+                state = u"建置中(其他狀態)"
             fo.write(u"%s,%s,%s,%s,%f,%f\r\n" %
             (locname["List"][1]["Value"],
              address["List"][1]["Value"],
