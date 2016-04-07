@@ -26,7 +26,7 @@ def main(args):
             elif d["State"] == 99:
                 state = u"建置中"
             else:
-                state = u"建置中(其他狀態)"
+                state = u"建置中(其他狀態%s)" % d["State"]
             fo.write(u"%s,%s,%s,%s,%f,%f\r\n" %
             (locname["List"][1]["Value"],
              address["List"][1]["Value"],
