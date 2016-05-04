@@ -2,6 +2,7 @@
 # -*- encoding: utf8 -*-
 
 import sys
+import os
 import optparse
 import urllib2
 import json
@@ -14,9 +15,12 @@ def main(args):
     '''\
     %prog [options]
     '''
+    current_path = os.path.dirname(os.path.abspath(__file__))
     response = urllib2.urlopen('https://wapi.gogoro.com/tw/api/vm/list')
     data = json.load(response)
-    with codecs.open("gostation-%s.csv" % datetime.now().strftime("%Y%m%d"), "w", "utf-8") as fo:
+    with codecs.open("%s/gostation-%s.csv"
+                     % (current_path, datetime.now().strftime("%Y%m%d")),
+                     "w", "utf-8") as fo:
         fo.write(u"站名,地址,營業時間,目前狀態,緯度,經度\r\n")
         for d in data["data"]:
             locname = json.loads(d["LocName"])

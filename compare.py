@@ -11,9 +11,12 @@ def main(args):
     '''\
     %prog [options]
     '''
-    last = "data/" + sorted(os.listdir("data"))[-1]
-    current = "gostation-%s.csv" % datetime.now().strftime("%Y%m%d")
-    os.system("python export.py")
+    current_path = os.path.dirname(os.path.abspath(__file__))
+    last_filename = sorted(os.listdir(os.path.join(current_path, "data")))[-1]
+    last = os.path.join(current_path, "data", last_filename)
+    current_filename = "gostation-%s.csv" % datetime.now().strftime("%Y%m%d")
+    current = os.path.join(current_path, current_filename)
+    os.system("python %s/export.py" % current_path)
     diff = difflib.ndiff(open(current).readlines(), open(last).readlines())
     updated = False
     try:
@@ -26,7 +29,8 @@ def main(args):
         pass
     finally:
         if updated:
-            os.rename(current, "data/" + current)
+            os.rename(current,
+                      os.path.join(current_path, "data", current_filename))
         else:
             os.remove(current)
     return 0
