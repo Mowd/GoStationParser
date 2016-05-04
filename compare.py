@@ -17,7 +17,7 @@ def main(args):
     current_filename = "gostation-%s.csv" % datetime.now().strftime("%Y%m%d")
     current = os.path.join(current_path, current_filename)
     os.system("python %s/export.py" % current_path)
-    diff = difflib.ndiff(open(current).readlines(), open(last).readlines())
+    diff = difflib.ndiff(open(last).readlines(), open(current).readlines())
     updated = False
     try:
         while True:
