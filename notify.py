@@ -5,6 +5,7 @@ import sys
 import optparse
 import fileinput
 import pycurl
+import urllib
 
 def main(args):
     '''\
@@ -16,7 +17,7 @@ def main(args):
     if len(station) > 0:
         c = pycurl.Curl()
         c.setopt(c.URL, 'PATH_TO_URL')
-        c.setopt(c.POSTFIELDS, 'text=%s' % "".join(station))
+        c.setopt(c.POSTFIELDS, 'text=%s' % urllib.quote("".join(station)))
         c.perform()
         c.close()
     return 0
