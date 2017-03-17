@@ -16,7 +16,7 @@ def main(args):
     last = os.path.join(current_path, "data", last_filename)
     current_filename = "gostation-%s.csv" % datetime.now().strftime("%Y%m%d")
     current = os.path.join(current_path, current_filename)
-    os.system("python %s/export.py" % current_path)
+    os.system("python %s/export_v2.py" % current_path)
     diff = difflib.ndiff(open(last).readlines(), open(current).readlines())
     updated = False
     try:
