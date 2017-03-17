@@ -88,7 +88,7 @@ def main(args):
             )
         )
     lines = sorted(lines)
-    with codecs.open("%s/gocharger-%s.csv"
+    with codecs.open("%s/gostation-%s.csv"
                      % (current_path, datetime.now().strftime("%Y%m%d")),
                      "w", "utf-8") as fo:
         fo.write(u"站名,地址,營業時間,目前狀態,緯度,經度\r\n")
