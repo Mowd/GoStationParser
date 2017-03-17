@@ -40,6 +40,8 @@ def parseTimeByte(he):
                 else:
                     tmp = availtime_list[0].split(" ~ ")
                     availtime_list[0] = "%s ~ %s" % (start_time, tmp[1])
+        if len(availtime_list) == 0:
+            availtime_list.append(u"公休")
         availday_list.append(u"星期%s：%s" % (
                 day_list[day],
                 u"，".join(availtime_list)
