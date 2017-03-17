@@ -1,12 +1,16 @@
-# GoParser
+# GoStationParser
 
 compare.py: 
 
-Trigger export.py and compare with exist GoStation data.
+Trigger export_v2.py and compare with exist GoStation data.
 
 export.py:
 
-Parse GoStation data and export to csv.
+DEPRECATED: Parse GoStation data and export to csv.
+
+export_v2.py
+
+New api to parse GoStation data with weekly availtime and export to csv.
 
 notify.py:
 
