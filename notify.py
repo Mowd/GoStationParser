@@ -15,9 +15,13 @@ def main(args):
     for line in fileinput.input():
         station.append(line)
     if len(station) > 0:
+        if u"GoStation Maintenance" in station[0]:
+            title = u"GoStation Maintenance"
+        else:
+            title = u"GoStation Update"
         c = pycurl.Curl()
         c.setopt(c.URL, 'PATH_TO_URL')
-        c.setopt(c.POSTFIELDS, 'text=%s' % urllib.quote("".join(station)))
+        c.setopt(c.POSTFIELDS, 'title=%s&text=%s' % (urllib.quote(title), urllib.quote("".join(station))))
         c.perform()
         c.close()
     return 0
