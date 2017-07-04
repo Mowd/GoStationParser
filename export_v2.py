@@ -96,6 +96,7 @@ def main(args):
                      "w", "utf-8") as fo:
         fo.write(u"站名,地址,營業時間,目前狀態,緯度,經度,gx_media_links\r\n")
         fo.write("\r\n".join(lines))
+        fo.write("\r\n")
     return 0
 
 

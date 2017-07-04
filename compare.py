@@ -31,7 +31,7 @@ def process_file(target):
             str = diff.next()
             if str[0] in ["+", "-"]:
                 updated = True
-                output.append(str)
+                output.append(str.strip())
     except:
         pass
     finally:
@@ -48,15 +48,17 @@ def main(args):
     '''\
     %prog [options]
     '''
-    process_file("data")
-    process_file("maintenance")
+    if args[0] == "data":
+        process_file("data")
+    if args[0] == "maintenance":
+        process_file("maintenance")
     return 0
 
 if __name__ == '__main__':
     parser = optparse.OptionParser(usage=main.__doc__)
     options, args = parser.parse_args()
 
-    if len(args) != 0:
+    if len(args) != 1:
         parser.print_help()
         sys.exit(1)
 

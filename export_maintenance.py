@@ -17,29 +17,34 @@ def main(args):
     lines = []
     current_path = os.path.dirname(os.path.abspath(__file__))
     response = urllib2.urlopen('https://wapi.gogoro.com/tw/api/vm/construction')
-    data = json.load(response)
-    for d in data["data"]["List"]:
-        name = json.loads(d["Name"])
-        address = json.loads(d["Address"])
-        address = address["List"][1]["Value"].replace(",", u"，")
-        start = d["ConstructionStart"]
-        end = d["ConstructionEnd"]
-        status = d["Status"]
-        lines.append(u"%s,%s,%s,%s,%s" %
-            (
-             name["List"][1]["Value"],
-             address,
-             start,
-             end,
-             status
+    content = response.read()
+    with codecs.open("%s/construction.json" % current_path, "w") as fo:
+        fo.write(content)
+    data = json.loads(content)
+    if data["data"] is not None:
+        for d in data["data"]["List"]:
+            name = json.loads(d["Name"])
+            address = json.loads(d["Address"])
+            address = address["List"][1]["Value"].replace(",", u"，")
+            start = d["ConstructionStart"]
+            end = d["ConstructionEnd"]
+            status = d["Status"]
+            lines.append(u"%s,%s,%s,%s,%s" %
+                (
+                 name["List"][1]["Value"],
+                 address,
+                 start,
+                 end,
+                 status
+                )
             )
-        )
     lines = sorted(lines)
     with codecs.open("%s/gostation-maintenance-%s.csv"
                      % (current_path, datetime.now().strftime("%Y%m%d")),
                      "w", "utf-8") as fo:
         fo.write(u"站名,地址,開始時間,結束時間,狀態\r\n")
         fo.write("\r\n".join(lines))
+        fo.write("\r\n")
     return 0
 
 
