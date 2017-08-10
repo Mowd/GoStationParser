@@ -10,7 +10,7 @@ import codecs
 from datetime import datetime
 
 def parseTimeByte(he):
-    day_list = [u'一', u'二', u'三', u'四', u'五', u'六', u'日', ];
+    day_list = [u'一', u'二', u'三', u'四', u'五', u'六', u'日'];
     availday_list = []
     for day in xrange(0, 7):
         h = he[day * 12: day * 12 + 12]
