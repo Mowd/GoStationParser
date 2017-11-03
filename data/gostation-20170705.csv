@@ -63,9 +63,6 @@ Gogoro 頭份自強服務中心站,苗栗縣頭份市自強路230號(近自強�
 Gogoro 饒河服務中心站,台北市松山區八德路四段650號(近饒河夜市),24HR,已啟用,25.049856,121.574954,https://cdn.gogoro.com/resources/images/gostations/TW1056601A_01.jpg
 Gogoro 高雄中山店站,高雄市新興區中山一路2號(近捷運中央公園站2號出口),24HR,已啟用,22.624185,120.301153,https://cdn.gogoro.com/resources/images/gostations/TW8005401A_01.jpg
 Gogoro 鳳山青年店站,高雄市鳳山區青年路二段287號(近文山特區),24HR,已啟用,22.639565,120.350948,https://cdn.gogoro.com/resources/images/gostations/TW8304801A_01.jpg
-Hi-Life 三重三民店站,新北市三重區三民街100號(近新北市三重聯邦公園),24HR,已啟用,25.063198,121.485257,https://cdn.gogoro.com/resources/images/gostations/TW2416101A_01.jpg
-Hi-Life 三重重高店站,新北市三重區集美街 211，213號(近新北市立三重高中),24HR,已啟用,25.054529,121.491812,https://cdn.gogoro.com/resources/images/gostations/TW2414401A_01.jpg
-Hi-Life三重重武店站,新北市三重區安慶街203之1號(近安慶街/民生東街口),24HR,已啟用,25.068296,121.492722,https://cdn.gogoro.com/resources/images/gostations/TW2414601A_01.jpg
 HiLife 三民鼎金店站,高雄市三民區鼎中路139號(近鼎中路/金山路口),24HR,已啟用,22.661849,120.319036,https://cdn.gogoro.com/resources/images/gostations/TW8079401A_01.jpg
 HiLife 三重商工店站,新北市三重區中正北路282號(近三重商工),24HR,已啟用,25.068558,121.480642,https://cdn.gogoro.com/resources/images/gostations/TW2416202A_01.jpg
 HiLife 仁德二仁店站,台南市仁德區二仁路一段99號(近嘉南藥理科技大學),24HR,已啟用,22.918866,120.225661,https://cdn.gogoro.com/resources/images/gostations/TW7175501A_01.jpg
@@ -77,6 +74,9 @@ HiLife 台中干城店站,台中市中區雙十路一段27-1、27-2、27-3號(�
 HiLife 台中建興店站,台中市南區復興路二段175-1.175-2號(近四育國中),24HR,已啟用,24.127435,120.666004,https://cdn.gogoro.com/resources/images/gostations/TW4025201A_01.jpg
 HiLife 彰化國聖店站,彰化縣彰化市中山路三段706號(近國聖國小),24HR,已啟用,24.094589,120.569448,https://cdn.gogoro.com/resources/images/gostations/TW5007701A_01.jpg
 HiLife 新北三峽店站,新北市三峽區中正路一段75-1號(近光明路/永安街口),24HR,已啟用,24.929386,121.375029,https://cdn.gogoro.com/resources/images/gostations/TW2374201A_01.jpg
+HiLife 新北三民店站,新北市三重區三民街100號(近新北市三重聯邦公園),24HR,已啟用,25.063198,121.485257,https://cdn.gogoro.com/resources/images/gostations/TW2416101A_01.jpg
+HiLife 新北重武店站,新北市三重區安慶街203之1號(近安慶街/民生東街口),24HR,已啟用,25.068296,121.492722,https://cdn.gogoro.com/resources/images/gostations/TW2414601A_01.jpg
+HiLife 新北重高店站,新北市三重區集美街 211，213號(近新北市立三重高中),24HR,已啟用,25.054529,121.491812,https://cdn.gogoro.com/resources/images/gostations/TW2414401A_01.jpg
 HiLife 新竹竹亮店站,新竹市東區光復路二段962號1樓(近市立體育場),24HR,已啟用,24.803544,120.979972,https://cdn.gogoro.com/resources/images/gostations/TW3006901A_01.jpg
 HiLife 新竹竹諺店站,新竹市北區中華路三段88號(近中華路三段/林森路口),24HR,已啟用,24.796878,120.961037,https://cdn.gogoro.com/resources/images/gostations/TW3006003A_01.jpg
 HiLife 新竹竹高店站,新竹市東區高峰路1號(近高峰路/寶山路口),24HR,已啟用,24.794182,120.972925,https://cdn.gogoro.com/resources/images/gostations/TW3006401A_01.jpg
@@ -229,9 +229,9 @@ Nova 資訊廣場新竹店站,新竹市東區光復路二段194巷3號(近國立
 全聯台中大甲店站,台中市大甲區復興路59號(近復興路/五褔街口),24HR,已啟用,24.346337,120.620013,https://cdn.gogoro.com/resources/images/gostations/TW4374501A_01.jpg
 全聯台中太平店站,台中市太平區樹德路117號(近樹德路/廣三街),24HR,已啟用,24.154161,120.711850,https://cdn.gogoro.com/resources/images/gostations/TW4115601A_01.jpg
 全聯台中沙鹿店站,台中市沙鹿區大同街119之1號(近大同街/大同街105巷交叉口),24HR,已啟用,24.239538,120.559117,https://cdn.gogoro.com/resources/images/gostations/TW4335301A_01.jpg
-全聯台中軍太店站(建置中),台中市北屯區軍功路１段183號(近軍功路一段/太原路三段口),24HR,建置中,24.165354,120.715901,https://cdn.gogoro.com/resources/images/gostations/TW4064102A_01.jpg
+全聯台中軍太店站(建置中),台中市北屯區軍功路１段183號(近軍功路一段/太原路三段口),24HR,建置中(其他狀態100),24.165354,120.715901,https://cdn.gogoro.com/resources/images/gostations/TW4064102A_01.jpg
 全聯台中遊園店站,台中市大肚區遊園路二段216號(近遊園路二段/遊園路二段214巷交叉口),24HR,已啟用,24.174169,120.581171,https://cdn.gogoro.com/resources/images/gostations/TW4325001A_01.jpg
-全聯台南培安店站(建置中),台南市安南區安和路一段463號(近安和路一段/培安路口),24HR,建置中,23.036345,120.213613,https://cdn.gogoro.com/resources/images/gostations/TW7095801A_01.jpg
+全聯台南培安店站(建置中),台南市安南區安和路一段463號(近安和路一段/培安路口),24HR,建置中(其他狀態100),23.036345,120.213613,https://cdn.gogoro.com/resources/images/gostations/TW7095801A_01.jpg
 全聯台南明興店站,台南市南區明興路48號(近明興路/南和路88巷口),24HR,已啟用,22.959675,120.187893,https://cdn.gogoro.com/resources/images/gostations/TW7026101A_01.jpg
 全聯大溪中正店站,桃園市大溪區慈湖路66號(近麥當勞),24HR,已啟用,24.882325,121.288923,https://cdn.gogoro.com/resources/images/gostations/TW3354201A_01.jpg
 全聯大溪員林店站,桃園市大溪區員林路一段5號(近介壽路/員林路口),24HR,已啟用,24.898534,121.283747,https://cdn.gogoro.com/resources/images/gostations/TW3356101A_01.jpg
@@ -301,7 +301,7 @@ Nova 資訊廣場新竹店站,新竹市東區光復路二段194巷3號(近國立
 家樂福三民店站,台北市松山區三民路160號(二樓機車停車場)(近民權國小),08:00 ~ 22:00,已啟用,25.061716,121.563271,https://cdn.gogoro.com/resources/images/gostations/TW1059201A_01.jpg
 家樂福中原店站,桃園市中壢區中華路二段501號(地下二樓機車停車場)(近桃園中壢區戶政事務本所),24HR,已啟用,24.962393,121.231466,https://cdn.gogoro.com/resources/images/gostations/TW3206801A_01.jpg
 家樂福便利購台中南屯店站,台中市南屯區南屯路二段270之1號(近南屯路二段/田心北二巷),24HR,已啟用,24.137127,120.648425,https://cdn.gogoro.com/resources/images/gostations/TW4085701A_01.jpg
-家樂福便利購員林大同店站(建置中),彰化縣員林市大同路一段455號(近大同路一段/明德街交岔口),24HR,建置中,23.965556,120.579044,https://cdn.gogoro.com/resources/images/gostations/TW5105601A_01.jpg
+家樂福便利購員林大同店站(建置中),彰化縣員林市大同路一段455號(近大同路一段/明德街交岔口),24HR,建置中(其他狀態100),23.965556,120.579044,https://cdn.gogoro.com/resources/images/gostations/TW5105601A_01.jpg
 家樂福便利購太平環中店站,台中市太平區環中東路三段567號(近新平立體停車場),24HR,已啟用,24.149201,120.715229,https://cdn.gogoro.com/resources/images/gostations/TW4118001A_01.jpg
 家樂福便利購桃園南平店,桃園市桃園區南平路168號(近南平路/新埔七街路口),24HR,已啟用,25.019651,121.301956,https://cdn.gogoro.com/resources/images/gostations/TW3307602A_01.jpg
 家樂福便利購永康二王店站,台南市永康區中山南路696號(近寶雅生活百貨),24HR,已啟用,23.020150,120.244360,https://cdn.gogoro.com/resources/images/gostations/TW7108801A_01.jpg
