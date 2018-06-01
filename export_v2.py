@@ -69,7 +69,7 @@ def main(args):
     for d in data:
         locname = json.loads(d["LocName"])
         address = json.loads(d["Address"])
-        address = address["List"][1]["Value"].replace(",", u"，")
+        address = address["List"][1]["Value"].replace(",", u"，").strip()
         state = u"已啟用"
         if "State" in d:
             if d["State"] == 1:
@@ -79,8 +79,9 @@ def main(args):
             else:
                 state = u"建置中(其他狀態%s)" % d["State"]
         availday_list = parseTimeByte(d["AvailableTimeByte"])
-        lines.append(u"%s,%s,%s,%s,%f,%f,%s" %
+        lines.append(u"%s,%s,%s,%s,%s,%f,%f,%s" %
             (
+             d["Id"].lower(),
              locname["List"][1]["Value"],
              address,
              u"，".join(availday_list),
@@ -94,7 +95,7 @@ def main(args):
     with codecs.open("%s/gostation-%s.csv"
                      % (current_path, datetime.now().strftime("%Y%m%d")),
                      "w", "utf-8") as fo:
-        fo.write(u"站名,地址,營業時間,目前狀態,緯度,經度,gx_media_links\r\n")
+        fo.write(u"VmId,站名,地址,營業時間,目前狀態,緯度,經度,gx_media_links\r\n")
         fo.write("\r\n".join(lines))
         fo.write("\r\n")
     return 0
