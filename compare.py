@@ -26,18 +26,24 @@ def process_file(target):
     diff = difflib.ndiff(open(last).readlines(), open(current).readlines())
     updated = False
     output = [title]
+    summary = []
     try:
         while True:
-            str = diff.next()
-            if str[0] in ["+", "-"]:
+            res = diff.next()
+            if res[0] in ["+", "-"]:
+                if res[0] == "+":
+                    s = res.split(",")
+                    summary.append("%s,%s" % (s[1], s[2]))
                 updated = True
-                output.append(str.strip())
+                output.append(res.strip())
     except:
         pass
     finally:
         if len(output) > 1:
             for o in output:
                 print o
+            print "\n\n"
+            print "\n".join(summary)
         if updated:
             os.rename(current,
                       os.path.join(current_path, target, current_filename))
